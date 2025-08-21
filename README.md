@@ -47,7 +47,7 @@ Descripción del proyecto y su propósito.
 ## Contacto
 ### Información del Grupo
 - **Institución**: SENA
-- **Programa**: [Nombre del programa]
-- **Ficha**: [Número de ficha]
-- **Instructor**: [Nombre del instructor]
-- **Período**: [Año - Trimestre]
+- **Programa**: Analisis y Desarrollo de Software
+- **Ficha**: 3114227
+- **Instructor**: Jhon Fredy
+- **Período**: 2025 - Trimestre: 3
