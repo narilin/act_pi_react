@@ -1,4 +1,4 @@
-import CarCard from "./CarCard";
+import CarCad from "./CarCad";
 
 const autos = [
   { id: 1, marca: "Toyota", modelo: "Corolla", precio: 15000, imagen: "/auto1.jpg" },
@@ -6,18 +6,11 @@ const autos = [
   { id: 3, marca: "Ford", modelo: "Mustang", precio: 35000, imagen: "/auto3.jpg" },
 ];
 
-export default function CarList() {
+export default function CardList() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {autos.map((auto) => (
-        <CarCard
-          key={auto.id}
-          id={auto.id}
-          marca={auto.marca}
-          modelo={auto.modelo}
-          precio={auto.precio}
-          imagen={auto.imagen}
-        />
+        <CarCad key={auto.id} {...auto} />
       ))}
     </div>
   );

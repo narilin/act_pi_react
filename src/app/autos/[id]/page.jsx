@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const autos = [
-  { id: 1, marca: "Toyota", modelo: "Corolla", precio: 15000, descripcion: "Un sedán confiable y económico.", imagen: "/auto1.jpg" },
-  { id: 2, marca: "Honda", modelo: "Civic", precio: 18000, descripcion: "Compacto, moderno y eficiente.", imagen: "/auto2.jpg" },
-  { id: 3, marca: "Ford", modelo: "Mustang", precio: 35000, descripcion: "Un deportivo clásico con mucha potencia.", imagen: "/auto3.jpg" },
+  { id: 1, marca: "Toyota", modelo: "Corolla", precio: 15000, descripcion: "Un sedán confiable y económico.", imagen: "/Carro1.jpg" },
+  { id: 2, marca: "Honda", modelo: "Civic", precio: 18000, descripcion: "Compacto, moderno y eficiente.", imagen: "/Carro2.jpg" },
+  { id: 3, marca: "Ford", modelo: "Mustang", precio: 35000, descripcion: "Un deportivo clásico con mucha potencia.", imagen: "/Carro3.jpg" },
 ];
 
 export default function AutoPage({ params }) {
