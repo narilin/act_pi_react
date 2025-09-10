@@ -13,14 +13,14 @@ export default function AutoPage({ params }) {
   if (!auto) return <p>Auto no encontrado</p>;
 
   return (
-    <div className="max-w-3xl mx-auto bg-white shadow-md rounded-xl p-6">
-      <Image src={auto.imagen} alt={auto.modelo} width={600} height={400} className="rounded-lg" />
-      <h1 className="text-2xl font-bold mt-4">{auto.marca} {auto.modelo}</h1>
-      <p className="text-gray-700 text-lg mt-2">Precio: ${auto.precio}</p>
-      <p className="mt-4">{auto.descripcion}</p>
+    <div className="max-w-3xl mx-auto bg-white   shadow-md rounded-xl p-6">
+      <Image src={auto.imagen} alt={auto.modelo} width={750} height={400} className="rounded-lg " />
+      <h1 className="text-2xl font-bold mt-4 text-black">{auto.marca} {auto.modelo}</h1>
+      <p className="text-green-700 text-lg mt-2 font-bold">Precio: ${auto.precio}</p>
+      <p className="mt-4 text-black font-bold ">{auto.descripcion}</p>
 
       {/* Botón para volver */}
-      <Link href="/" className="inline-block mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+      <Link href="/" className="inline-block mt-6 bg-blue-600 text-white-700 px-4 py-2 rounded-lg hover:bg-blue-700">
         ← Volver al catálogo
       </Link>
     </div>

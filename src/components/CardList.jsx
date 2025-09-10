@@ -1,9 +1,9 @@
 import CarCad from "./CarCad";
 
 const autos = [
-  { id: 1, marca: "Toyota", modelo: "Corolla", precio: 15000, imagen: "/auto1.jpg" },
-  { id: 2, marca: "Honda", modelo: "Civic", precio: 18000, imagen: "/auto2.jpg" },
-  { id: 3, marca: "Ford", modelo: "Mustang", precio: 35000, imagen: "/auto3.jpg" },
+  { id: 1, marca: "Toyota", modelo: "Corolla", precio: 15000, imagen: "/Carr1.jpg" },
+  { id: 2, marca: "Honda", modelo: "Civic", precio: 18000, imagen: "/Caro2.jpg" },
+  { id: 3, marca: "Ford", modelo: "Mustang", precio: 35000, imagen: "/Caro3.jpg" },
 ];
 
 export default function CardList() {

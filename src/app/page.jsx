@@ -1,22 +1,44 @@
-import Link from "next/link";
-import CardList from "@/components/CardList";
+import Image from "next/image";
 
-export default function CatalogoPage() {
+export default function HomePage() {
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">Catálogo de Autos</h1>
-      
-      {/* Lista de autos */}
-      <CardList />
+    <>
+      <main className="flex flex-col items-center justify-center min-h-screenpx-6 py-10">
+        {/* Contenedor principal */}
+        <div className="w-full max-w-6xl bg-pink-700 p-8 rounded-xl shadow-md text-white">
+          {/* Título arriba */}
+          <h1 className="text-3xl font-bold text-center mb-8">
+            Concesionario Automundo
+          </h1>
 
-      {/* Botón para volver */}
-      <div className="mt-8 text-center">
-        <Link href="/">
-          <button className="bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800">
-            ← Volver al Inicio
-          </button>
-        </Link>
-      </div>
-    </div>
+          {/* Contenido en 2 columnas */}
+          <div className="grid grid-cols-2 gap-8 items-center">
+            {/* Imagen a la izquierda */}
+            <div className="flex justify-center">
+              <Image
+                src="/auto.jpg" // Asegúrate que la imagen esté en /public
+                alt="Auto principal"
+                width={400}
+                height={300}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+
+            {/* Texto a la derecha */}
+            <div className="space-y-4 text-lg">
+              <p>
+                <strong>Dirección:</strong> Calle Falsa 123
+              </p>
+              <p>
+                <strong>Teléfono:</strong> 333 333 3333
+              </p>
+              <p>
+                <strong>Horario:</strong> Lunes a Viernes, 9am - 6pm
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
